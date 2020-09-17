@@ -4,3 +4,29 @@
     border: 1px solid red;
     width: 100%;
 }
+.card-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#pills-profile{
+    display: flex;  
+    flex-direction: column;
+}
+#pills-tab {
+    display: flex;
+    justify-content: center;
+}
+.card-body{
+    padding: 8px;
+}
+body {
+    background-color: lightgray;
+}
+.card{
+    border: solid 1px red;
+}
+#create {
+    display: flex;
+    justify-content: right;
+}

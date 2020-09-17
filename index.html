@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Instagram Feed</title>
+    <script src="https://kit.fontawesome.com/166f6d2ecd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"/>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -14,14 +15,13 @@
     <div class="instaTag">
         <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="#">
-            <img src="/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-            Bootstrap
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            Instagram
         </a>
-        </nav>
-    </div>
+     
 
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+<button type="button" class="btn btn-primary" id="create" data-toggle="modal" data-target="#exampleModal">
   Create a new post
 </button>
 
@@ -46,22 +46,151 @@
     </div>
   </div>
 </div>
+   
 
+
+<div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <i class="fa fa-cog" aria-hidden="true"></i>
+  </a>
+
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+    <a class="dropdown-item logout" href="#">Logout</a>
+  </div>
+</div>
+</nav>
+    </div>
+
+
+<!-- PILLS -->
 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+        <i class="fa fa-th" aria-hidden="true"></i>
+    </a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+        <i class="fa fa-square-o" aria-hidden="true"></i>
+    </a>
   </li>
 </ul>
+
 <div class="tab-content" id="pills-tabContent">
-  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
-  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+
+<!-- GRID -->
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="picture" style="width: 18rem;">
+                    <img src="https://loremflickr.com/300/300/dog" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="picture" style="width: 18rem;">
+                    <img src="https://loremflickr.com/300/300/cat" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="picture" style="width: 18rem;">
+                    <img src="https://loremflickr.com/300/300/bird" class="card-img-top" alt="...">
+                </div>
+            </div>
+                  <div class="col-sm">
+                <div class="picture" style="width: 18rem;">
+                    <img src="https://loremflickr.com/350/350/chicken" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="picture" style="width: 18rem;">
+                    <img src="https://loremflickr.com/300/300/pig" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="picture" style="width: 18rem;">
+                    <img src="https://loremflickr.com/300/300/camel" class="card-img-top" alt="...">
+                </div>
+            </div>
+                  <div class="col-sm">
+                <div class="picture" style="width: 18rem;">
+                    <img src="https://loremflickr.com/350/350/lunch" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="picture" style="width: 18rem;">
+                    <img src="https://loremflickr.com/300/300/pop" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="picture" style="width: 18rem;">
+                    <img src="https://loremflickr.com/300/300/queen" class="card-img-top" alt="...">
+                </div>
+            </div>
+         
+        </div>
+        </div>
+  </div>
+
+  <!-- LIST  --> 
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+  <!-- card 1 -->
+  <div class="list">
+    <div class="card" style="width: 40rem;">
+        <h5 class="card-title">My first photo </h5>
+        <img src="https://loremflickr.com/300/300/dog" class="card-img-top" alt="...">
+        <div class="card-body">
+            <strong> 23 Likes</strong>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            Comment...
+        </div>
+    </div>
+    <div class="card" style="width: 40rem;">
+        <h5 class="card-title">My first photo </h5>
+        <img src="https://loremflickr.com/300/300/cat" class="card-img-top" alt="...">
+        <div class="card-body">
+            <strong> 23 Likes</strong>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            Comment...
+        </div>
+    </div>
+     <div class="card" style="width: 40rem;">
+        <h5 class="card-title">My first photo </h5>
+        <img src="https://loremflickr.com/300/300/squirrel" class="card-img-top" alt="...">
+        <div class="card-body">
+            <strong> 23 Likes</strong>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            Comment...
+        </div>
+    </div>
+     <div class="card" style="width: 40rem;">
+        <h5 class="card-title">My first photo </h5>
+        <img src="https://loremflickr.com/300/300/possum" class="card-img-top" alt="...">
+        <div class="card-body">
+            <strong> 23 Likes</strong>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            Comment...
+        </div>
+    </div>
+     <div class="card" style="width: 40rem;">
+        <h5 class="card-title">My first photo </h5>
+        <img src="https://loremflickr.com/300/300/cat" class="card-img-top" alt="...">
+        <div class="card-body">
+            <strong> 23 Likes</strong>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            Comment...
+        </div>
+    </div>
+  </div>
+  </div>
 </div>
 
 </body>
